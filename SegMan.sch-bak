@@ -379,7 +379,7 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3990fa.
 	1    0    0    -1  
 $EndComp
 Text Notes 11100 5700 0    50   ~ 0
-Notes:\nShould the DC-DC from segment be isolated?\nShould the DC-DC from charging be isolated?\nCan those two DC-DC converters be the same unit? With weird diode implementation?\nShould the power switch implementation have any part onboard, or purely in panel wiring?\nDo the charging power outputs need to be different than the segment power inputs?\nShould the segment power input be fused? If so, then the charging output and segment power inputs can be tied together and have a single output.
+Notes:\nShould the DC-DC from segment be isolated?\nShould the DC-DC from charging be isolated?\nCan those two DC-DC converters be the same unit? With weird diode implementation?\nShould the power switch implementation have any part onboard, or purely in panel wiring?\nDo the charging power outputs need to be different than the segment power inputs?\nShould the segment power input be fused? If so, then the charging output and segment power inputs can be tied together and have a single output.\nShould charging relay coil grounds be charging- or segment-?  If charging-, should use a PMOS FET and use pull-up open drain with ESP8266.  If segment- can keep low-side transistor.
 Text Notes 2400 6250 0    50   ~ 0
 Non-isolated
 $EndSCHEMATC
