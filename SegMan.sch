@@ -25,6 +25,8 @@ F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&
 F 4 "PB303-ND" H 5450 3050 50  0001 C CNN "Digikey-Part"
 F 5 "Digikey" H 5450 3050 50  0001 C CNN "Provider"
 F 6 "PB303-ND" H 5450 3050 50  0001 C CNN "Provider Part Number"
+F 7 "TE Connectivity" H 5450 3050 50  0001 C CNN "Manufacturer"
+F 8 "T9AS1D12-24" H 5450 3050 50  0001 C CNN "Manufacturer Part Number"
 	1    5450 3050
 	-1   0    0    -1  
 $EndComp
@@ -88,31 +90,31 @@ CURRENTSENSE
 Text Label 5850 4050 0    50   ~ 0
 SEG_RTN
 Wire Wire Line
-	5400 2400 5300 2400
+	5250 2400 5150 2400
 Wire Wire Line
-	5300 2400 5300 2300
+	5150 2400 5150 2300
 $Comp
 L Device:R R8
 U 1 1 5D97B85B
-P 4600 1800
-F 0 "R8" H 4531 1754 50  0000 R CNN
-F 1 "0.5" H 4531 1845 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4530 1800 50  0001 C CNN
-F 3 "~" H 4600 1800 50  0001 C CNN
-	1    4600 1800
+P 4450 1800
+F 0 "R8" H 4381 1754 50  0000 R CNN
+F 1 "0.5" H 4381 1845 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4380 1800 50  0001 C CNN
+F 3 "~" H 4450 1800 50  0001 C CNN
+	1    4450 1800
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	4900 1900 4800 1900
-Text Label 5800 1800 0    50   ~ 0
+	4750 1900 4650 1900
+Text Label 5650 1800 0    50   ~ 0
 SDA_SEG
 Wire Wire Line
-	5800 1800 5700 1800
-Text Label 5800 1900 0    50   ~ 0
+	5650 1800 5550 1800
+Text Label 5650 1900 0    50   ~ 0
 SCL_SEG
 Wire Wire Line
-	5800 1900 5700 1900
-Text Label 5800 2100 0    50   ~ 0
+	5650 1900 5550 1900
+Text Label 5650 2100 0    50   ~ 0
 ~ALERT
 Wire Wire Line
 	7900 3950 7900 3850
@@ -152,18 +154,20 @@ CURRENTSENSE
 $Comp
 L Analog_ADC:INA226 U2
 U 1 1 5D973C5D
-P 5300 1800
-F 0 "U2" H 5050 2400 50  0000 C CNN
-F 1 "INA226" H 5050 2300 50  0000 C CNN
-F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 6100 1350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ina226.pdf" H 5650 1700 50  0001 C CNN
-F 4 "296-29034-1-ND" H 5300 1800 50  0001 C CNN "Digikey-Part"
-F 5 "Digikey" H 5300 1800 50  0001 C CNN "Provider"
-F 6 "296-29034-1-ND" H 5300 1800 50  0001 C CNN "Provider Part Number"
-	1    5300 1800
+P 5150 1800
+F 0 "U2" H 4900 2400 50  0000 C CNN
+F 1 "INA226" H 4900 2300 50  0000 C CNN
+F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 5950 1350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina226.pdf" H 5500 1700 50  0001 C CNN
+F 4 "296-29034-1-ND" H 5150 1800 50  0001 C CNN "Digikey-Part"
+F 5 "Digikey" H 5150 1800 50  0001 C CNN "Provider"
+F 6 "296-29034-1-ND" H 5150 1800 50  0001 C CNN "Provider Part Number"
+F 7 "Texas Instruments" H 5150 1800 50  0001 C CNN "Manufacturer"
+F 8 "INA226AIDGSR" H 5150 1800 50  0001 C CNN "Manufacturer Part Number"
+	1    5150 1800
 	1    0    0    -1  
 $EndComp
-Text Notes 6750 800  0    79   ~ 16
+Text Notes 6600 800  0    79   ~ 16
 Non-isolated 5V DC-DC Converter + OVP
 Wire Wire Line
 	8900 6500 8800 6500
@@ -210,6 +214,8 @@ F 3 "https://www.onsemi.com/pub/Collateral/S1M-D.pdf" H 5750 3250 50  0001 C CNN
 F 4 "S1BFSCT-ND" H 5750 3250 50  0001 C CNN "Digikey-Part"
 F 5 "Digikey" H 5750 3250 50  0001 C CNN "Provider"
 F 6 "S1BFSCT-ND" H 5750 3250 50  0001 C CNN "Provider Part Number"
+F 7 "ON Semiconductor" H 5750 3250 50  0001 C CNN "Manufacturer"
+F 8 "S1B" H 5750 3250 50  0001 C CNN "Manufacturer Part Number"
 	1    5750 3250
 	0    -1   1    0   
 $EndComp
@@ -239,10 +245,14 @@ L Device:LED D1
 U 1 1 5D98761B
 P 2200 6450
 F 0 "D1" V 2147 6528 50  0000 L CNN
-F 1 "LED" V 2238 6528 50  0000 L CNN
+F 1 "LED1" V 2238 6528 50  0000 L CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2200 6450 50  0001 C CNN
 F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF" H 2200 6450 50  0001 C CNN
 F 4 "160-1830-1-ND" H 2200 6450 50  0001 C CNN "Digikey-Part"
+F 5 "Lite-On Inc." H 2200 6450 50  0001 C CNN "Manufacturer"
+F 6 "LTST-C193KRKT-5A" H 2200 6450 50  0001 C CNN "Manufacturer Part Number"
+F 7 "Digikey" H 2200 6450 50  0001 C CNN "Provider"
+F 8 "160-1830-1-ND" H 2200 6450 50  0001 C CNN "Provider Part Number"
 	1    2200 6450
 	0    -1   -1   0   
 $EndComp
@@ -388,7 +398,7 @@ Text Label 8200 3950 0    50   ~ 0
 SEG_RTN
 Text Label 9900 3750 0    50   ~ 0
 SEG_RTN
-Text Label 5400 2400 0    50   ~ 0
+Text Label 5250 2400 0    50   ~ 0
 SEG_RTN
 Text Label 1900 2850 2    50   ~ 0
 SEG_RTN
@@ -398,101 +408,107 @@ Text Label 7850 5700 2    50   ~ 0
 LED1
 Text Notes 8550 5600 0    50   ~ 0
 Max pin\ncurrent:\n12mA
-Text Notes 8300 1300 0    50   ~ 0
+Text Notes 8150 1300 0    50   ~ 0
 5V
 Wire Wire Line
 	9600 5900 9500 5900
-Connection ~ 7400 1400
+Connection ~ 7250 1400
 Wire Wire Line
-	8300 1400 8500 1400
+	8150 1400 8350 1400
 Wire Wire Line
-	7400 1400 7600 1400
+	7250 1400 7450 1400
 Wire Wire Line
-	8500 1400 8500 1500
+	8350 1400 8350 1500
 Wire Wire Line
-	7400 1500 7400 1400
+	7250 1500 7250 1400
 $Comp
 L Lafayette_Electric_Car_Internals:V7805-500 U3
 U 1 1 5D9BC99E
-P 7700 1300
-F 0 "U3" H 7950 1467 50  0000 C CNN
-F 1 "V7805-500" H 7950 1376 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7200 1400 50  0001 C CNN
-F 3 "https://www.cui.com/product/resource/v78-500.pdf" H 7200 1400 50  0001 C CNN
-F 4 "102-1709-ND" H 7700 1300 50  0001 C CNN "Digikey-Part"
-F 5 "Digikey" H 7700 1300 50  0001 C CNN "Provider"
-F 6 "102-1709-ND" H 7700 1300 50  0001 C CNN "Provider Part Number"
-	1    7700 1300
+P 7550 1300
+F 0 "U3" H 7800 1467 50  0000 C CNN
+F 1 "V7805-500" H 7800 1376 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7050 1400 50  0001 C CNN
+F 3 "https://www.cui.com/product/resource/v78-500.pdf" H 7050 1400 50  0001 C CNN
+F 4 "102-1709-ND" H 7550 1300 50  0001 C CNN "Digikey-Part"
+F 5 "Digikey" H 7550 1300 50  0001 C CNN "Provider"
+F 6 "102-1709-ND" H 7550 1300 50  0001 C CNN "Provider Part Number"
+F 7 "CUI Inc." H 7550 1300 50  0001 C CNN "Manufacturer"
+F 8 "V7805-500" H 7550 1300 50  0001 C CNN "Manufacturer Part Number"
+	1    7550 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:D_Zener D5
 U 1 1 5DF293D0
-P 9050 1600
-F 0 "D5" V 9004 1679 50  0000 L CNN
-F 1 "D_Zener" V 9095 1679 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 9050 1600 50  0001 C CNN
-F 3 "~" H 9050 1600 50  0001 C CNN
-	1    9050 1600
+P 8900 1600
+F 0 "D5" V 8854 1679 50  0000 L CNN
+F 1 "SMAZ5V6" V 8945 1679 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 8900 1600 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds18015.pdf" H 8900 1600 50  0001 C CNN
+F 4 "Diodes Incorporated" H 8900 1600 50  0001 C CNN "Manufacturer"
+F 5 "SMAZ5V6-13-F" H 8900 1600 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Digikey" H 8900 1600 50  0001 C CNN "Provider"
+F 7 "SMAZ5V6-FDICT-ND" H 8900 1600 50  0001 C CNN "Provider Part Number"
+	1    8900 1600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4600 2000 4600 1950
+	4450 2000 4450 1950
 Wire Wire Line
-	4600 2000 4900 2000
+	4450 2000 4750 2000
 Wire Wire Line
-	4600 1500 4900 1500
+	4450 1500 4750 1500
 Wire Wire Line
-	4800 1900 4800 1600
+	4650 1900 4650 1600
 Wire Wire Line
-	4800 1600 4600 1600
+	4650 1600 4450 1600
 Wire Wire Line
-	4600 1600 4600 1650
+	4450 1600 4450 1650
 Wire Wire Line
-	4600 1500 4600 1600
-Connection ~ 4600 1600
+	4450 1500 4450 1600
+Connection ~ 4450 1600
 Wire Wire Line
-	4500 1500 4600 1500
-Connection ~ 4600 1500
-Text Label 5900 1200 0    50   ~ 0
+	4350 1500 4450 1500
+Connection ~ 4450 1500
+Text Label 5750 1200 0    50   ~ 0
 SEG_RTN
-Text Notes 3950 800  0    79   ~ 16
+Text Notes 3800 800  0    79   ~ 16
 VSEG+ Voltage and Board Current Monitor
 $Comp
 L Device:C C4
 U 1 1 5DE3F3C1
-P 5550 1200
-F 0 "C4" V 5298 1200 50  0000 C CNN
-F 1 "0.1u" V 5389 1200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5588 1050 50  0001 C CNN
-F 3 "~" H 5550 1200 50  0001 C CNN
-	1    5550 1200
+P 5400 1200
+F 0 "C4" V 5148 1200 50  0000 C CNN
+F 1 "0.1u" V 5239 1200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5438 1050 50  0001 C CNN
+F 3 "~" H 5400 1200 50  0001 C CNN
+	1    5400 1200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5400 1200 5300 1200
+	5250 1200 5150 1200
 Wire Wire Line
-	5300 1200 5300 1300
+	5150 1200 5150 1300
 Wire Wire Line
-	5300 1100 5300 1200
-Connection ~ 5300 1200
+	5150 1100 5150 1200
+Connection ~ 5150 1200
 Wire Wire Line
-	5700 1200 5800 1200
+	5550 1200 5650 1200
 Wire Wire Line
-	5700 1600 5800 1600
+	5550 1600 5650 1600
 Wire Wire Line
-	5800 1600 5800 1500
-Connection ~ 5800 1200
+	5650 1600 5650 1500
+Connection ~ 5650 1200
 Wire Wire Line
-	5800 1200 5900 1200
+	5650 1200 5750 1200
 Wire Wire Line
-	5700 1500 5800 1500
-Connection ~ 5800 1500
+	5550 1500 5650 1500
+Connection ~ 5650 1500
 Wire Wire Line
-	5800 1500 5800 1200
+	5650 1500 5650 1200
 Wire Wire Line
-	7300 1400 7400 1400
-Text Notes 7150 1300 0    50   ~ 0
+	7150 1400 7250 1400
+Text Notes 7000 1300 0    50   ~ 0
 19.6V-25.2V
 $Comp
 L Device:R R11
@@ -531,282 +547,275 @@ Text Notes 6500 4600 0    50   ~ 0
 Text Notes 6500 5100 0    50   ~ 0
 0.35V (-20A) -> 3.10V (20A)
 $Comp
-L Device:Q_SCR_AGK D6
-U 1 1 5DC123D8
-P 9750 1700
-F 0 "D6" H 9838 1746 50  0000 L CNN
-F 1 "Q_SCR_AGK" H 9838 1655 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" V 9750 1700 50  0001 C CNN
-F 3 "~" V 9750 1700 50  0001 C CNN
-	1    9750 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R12
 U 1 1 5DC12F62
-P 9050 2000
-F 0 "R12" H 9120 2046 50  0000 L CNN
-F 1 "R" H 9120 1955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8980 2000 50  0001 C CNN
-F 3 "~" H 9050 2000 50  0001 C CNN
-	1    9050 2000
+P 8900 2000
+F 0 "R12" H 8970 2046 50  0000 L CNN
+F 1 "R" H 8970 1955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8830 2000 50  0001 C CNN
+F 3 "~" H 8900 2000 50  0001 C CNN
+	1    8900 2000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C8
 U 1 1 5DC1EB50
-P 9400 2000
-F 0 "C8" H 9515 2046 50  0000 L CNN
-F 1 "C" H 9515 1955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9438 1850 50  0001 C CNN
-F 3 "~" H 9400 2000 50  0001 C CNN
-	1    9400 2000
+P 9250 2000
+F 0 "C8" H 9365 2046 50  0000 L CNN
+F 1 "C" H 9365 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9288 1850 50  0001 C CNN
+F 3 "~" H 9250 2000 50  0001 C CNN
+	1    9250 2000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9600 1800 9400 1800
+	9450 1800 9250 1800
 Wire Wire Line
-	9400 1800 9400 1850
+	9250 1800 9250 1850
 Wire Wire Line
-	9400 1800 9050 1800
+	9250 1800 8900 1800
 Wire Wire Line
-	9050 1800 9050 1850
-Connection ~ 9400 1800
+	8900 1800 8900 1850
+Connection ~ 9250 1800
 Wire Wire Line
-	9750 1850 9750 2250
+	9600 1850 9600 2250
 Wire Wire Line
-	9750 2250 9400 2250
+	9600 2250 9250 2250
 Wire Wire Line
-	9400 2250 9400 2150
+	9250 2250 9250 2150
 Wire Wire Line
-	9400 2250 9050 2250
+	9250 2250 8900 2250
 Wire Wire Line
-	9050 2250 9050 2150
-Connection ~ 9400 2250
-Connection ~ 9050 1800
+	8900 2250 8900 2150
+Connection ~ 9250 2250
+Connection ~ 8900 1800
 Wire Wire Line
-	9050 1750 9050 1800
+	8900 1750 8900 1800
 Wire Wire Line
-	9050 1450 9050 1400
+	8900 1450 8900 1400
 Wire Wire Line
-	9050 1400 9150 1400
+	8900 1400 9000 1400
 Wire Wire Line
-	9050 2250 8500 2250
+	8900 2250 8350 2250
 Wire Wire Line
-	8500 2250 8500 1800
-Connection ~ 9050 2250
+	8350 2250 8350 1800
+Connection ~ 8900 2250
 Wire Wire Line
-	8500 2250 7950 2250
+	8350 2250 7800 2250
 Wire Wire Line
-	7950 2250 7950 1800
+	7800 2250 7800 1800
 Wire Wire Line
-	7950 2250 7400 2250
-Connection ~ 7950 2250
-Connection ~ 9050 1400
-Connection ~ 8500 1400
-Connection ~ 8500 2250
+	7800 2250 7250 2250
+Connection ~ 7800 2250
+Connection ~ 8900 1400
+Connection ~ 8350 1400
+Connection ~ 8350 2250
 Wire Wire Line
-	9750 1400 9750 1550
-Text Label 4500 1500 2    50   ~ 0
+	9600 1300 9600 1400
+Text Label 4350 1500 2    50   ~ 0
 VSEG_FUSE_A
-Text Label 4500 2100 2    50   ~ 0
+Text Label 4350 2100 2    50   ~ 0
 VSEG_FUSE_B
 Wire Wire Line
-	4600 2000 4600 2100
+	4450 2000 4450 2100
 Wire Wire Line
-	4600 2100 4500 2100
-Connection ~ 4600 2000
-Text Label 7300 1400 2    50   ~ 0
+	4450 2100 4350 2100
+Connection ~ 4450 2000
+Text Label 7150 1400 2    50   ~ 0
 VSEG_FUSE_B
 Wire Notes Line
-	6700 650  10350 650 
+	6550 650  10350 650 
 Wire Notes Line
 	10350 650  10350 2500
 Wire Notes Line
-	6700 2500 6700 650 
+	6550 2500 6550 650 
 Wire Notes Line
-	10350 2500 6700 2500
+	10350 2500 6550 2500
 Wire Notes Line
-	3900 650  3900 2500
+	3750 650  3750 2500
 Wire Notes Line
-	3900 2500 6600 2500
+	3750 2500 6450 2500
 Wire Notes Line
-	6600 2500 6600 650 
+	6450 2500 6450 650 
 Wire Notes Line
-	6600 650  3900 650 
+	6450 650  3750 650 
 Wire Wire Line
 	8100 3300 8100 3150
 Wire Notes Line
-	3800 650  650  650 
+	3650 650  650  650 
 Wire Notes Line
 	650  650  650  4150
 Wire Notes Line
-	3800 2500 3800 650 
-Text Label 3150 1600 0    50   ~ 0
+	3650 2500 3650 650 
+Text Label 3100 1600 0    50   ~ 0
 SEG_RTN
 Wire Wire Line
-	3150 1450 3050 1450
-Text Label 3150 1450 0    50   ~ 0
+	3100 1450 3000 1450
+Text Label 3100 1450 0    50   ~ 0
 VSEG_FUSE_A
 Wire Wire Line
-	3150 1600 3050 1600
+	3100 1600 3000 1600
 Wire Wire Line
-	2700 1450 2800 1450
-Text Label 2700 1450 2    50   ~ 0
+	2650 1450 2750 1450
+Text Label 2650 1450 2    50   ~ 0
 VSEG+
 Wire Wire Line
-	2700 1600 2800 1600
-Text Label 2700 1600 2    50   ~ 0
+	2650 1600 2750 1600
+Text Label 2650 1600 2    50   ~ 0
 VSEG-
 $Comp
 L Lafayette_Electric_Car_Internals:Fuse F2
 U 1 1 5DBBCB83
-P 2800 1600
-F 0 "F2" H 2850 1550 50  0000 C CNN
-F 1 "125mA" H 3050 1500 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:0451.125MRL" H 2800 1600 50  0001 C CNN
-F 3 "" H 2800 1600 50  0001 C CNN
-F 4 "F3154CT-ND" H 2800 1600 50  0001 C CNN "Digikey-Part"
-F 5 "Digikey" H 2800 1600 50  0001 C CNN "Provider"
-F 6 "F3154CT-ND" H 2800 1600 50  0001 C CNN "Provider Part Number"
-	1    2800 1600
+P 2750 1600
+F 0 "F2" H 2875 1491 50  0000 C CNN
+F 1 "250mA" H 2875 1400 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:0154.500DRL" H 2750 1600 50  0001 C CNN
+F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_154_154t_154l_154tl_datasheet.pdf.pdf" H 2750 1600 50  0001 C CNN
+F 4 "F3154CT-ND" H 2750 1600 50  0001 C CNN "Digikey-Part"
+F 5 "Digikey" H 2750 1600 50  0001 C CNN "Provider"
+F 6 "F3154CT-ND" H 2750 1600 50  0001 C CNN "Provider Part Number"
+F 7 "Littelfuse Inc." H 2750 1600 50  0001 C CNN "Manufacturer"
+F 8 "0154.500DRL" H 2750 1600 50  0001 C CNN "Manufacturer Part Number"
+	1    2750 1600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Lafayette_Electric_Car_Internals:Fuse F1
 U 1 1 5DB8BF51
-P 2800 1450
-F 0 "F1" H 2850 1550 50  0000 C CNN
-F 1 "125mA" H 3050 1600 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:0451.125MRL" H 2800 1450 50  0001 C CNN
-F 3 "" H 2800 1450 50  0001 C CNN
-F 4 "F3154CT-ND" H 2800 1450 50  0001 C CNN "Digikey-Part"
-F 5 "Digikey" H 2800 1450 50  0001 C CNN "Provider"
-F 6 "F3154CT-ND" H 2800 1450 50  0001 C CNN "Provider Part Number"
-	1    2800 1450
+P 2750 1450
+F 0 "F1" H 2875 1675 50  0000 C CNN
+F 1 "250mA" H 2875 1584 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:0154.500DRL" H 2750 1450 50  0001 C CNN
+F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_154_154t_154l_154tl_datasheet.pdf.pdf" H 2750 1450 50  0001 C CNN
+F 4 "F3154CT-ND" H 2750 1450 50  0001 C CNN "Digikey-Part"
+F 5 "Digikey" H 2750 1450 50  0001 C CNN "Provider"
+F 6 "F3154CT-ND" H 2750 1450 50  0001 C CNN "Provider Part Number"
+F 7 "Littelfuse Inc." H 2750 1450 50  0001 C CNN "Manufacturer"
+F 8 "0154.500DRL" H 2750 1450 50  0001 C CNN "Manufacturer Part Number"
+	1    2750 1450
 	1    0    0    -1  
 $EndComp
-Text Label 2750 1000 2    50   ~ 0
+Text Label 2650 1000 2    50   ~ 0
 VSEG+
-Text Label 2750 1100 2    50   ~ 0
+Text Label 2650 1100 2    50   ~ 0
 VSEG-
 Wire Wire Line
-	2850 1100 2750 1100
+	2750 1100 2650 1100
 Wire Wire Line
-	2850 1000 2750 1000
-Text Notes 3500 1100 2    50   ~ 0
+	2750 1000 2650 1000
+Text Notes 3400 1100 2    50   ~ 0
 Power to\nPacMan
 $Comp
 L Connector_Generic:Conn_01x02 J4
 U 1 1 5DADEE26
-P 3050 1000
-F 0 "J4" H 3050 1100 50  0000 C CNN
-F 1 "PacPower" H 2968 1126 50  0001 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:DF22-2P-7.92" H 3050 1000 50  0001 C CNN
-F 3 "https://www.hirose.com/product/document?clcode=CL0680-1074-0-00&productname=DF22AL-2EP-7.92C&series=DF22&documenttype=Catalog&lang=en&documentid=D31682_en" H 3050 1000 50  0001 C CNN
-F 4 "H10718-ND" H 3050 1000 50  0001 C CNN "Digikey-Part"
-F 5 "Hirose Connector" H 3050 1000 50  0001 C CNN "Manufacturer"
-F 6 "DF22-2P-7.92DSA(05)" H 3050 1000 50  0001 C CNN "Manufacturer Part Number"
-F 7 "Mouser" H 3050 1000 50  0001 C CNN "Provider"
-F 8 "798-DF22-2P7.92DSA05" H 3050 1000 50  0001 C CNN "Provider Part Number"
-	1    3050 1000
+P 2950 1000
+F 0 "J4" H 2950 1100 50  0000 C CNN
+F 1 "PacPower" H 2868 1126 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:DF22-2P-7.92" H 2950 1000 50  0001 C CNN
+F 3 "https://www.hirose.com/product/document?clcode=CL0680-1074-0-00&productname=DF22AL-2EP-7.92C&series=DF22&documenttype=Catalog&lang=en&documentid=D31682_en" H 2950 1000 50  0001 C CNN
+F 4 "H10718-ND" H 2950 1000 50  0001 C CNN "Digikey-Part"
+F 5 "Hirose Connector" H 2950 1000 50  0001 C CNN "Manufacturer"
+F 6 "DF22-2P-7.92DSA(05)" H 2950 1000 50  0001 C CNN "Manufacturer Part Number"
+F 7 "Mouser" H 2950 1000 50  0001 C CNN "Provider"
+F 8 "798-DF22-2P7.92DSA05" H 2950 1000 50  0001 C CNN "Provider Part Number"
+	1    2950 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 2600 2400 2500
+	2350 2600 2350 2500
 Wire Wire Line
-	2500 2600 2400 2600
-Connection ~ 2400 2100
+	2450 2600 2350 2600
+Connection ~ 2350 2100
 Wire Wire Line
-	2400 2100 2400 2200
+	2350 2100 2350 2200
 $Comp
 L Device:C C2
 U 1 1 5DEB84AE
-P 2400 2350
-F 0 "C2" H 2286 2304 50  0000 R CNN
-F 1 "0.1u" H 2286 2395 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2438 2200 50  0001 C CNN
-F 3 "~" H 2400 2350 50  0001 C CNN
-	1    2400 2350
+P 2350 2350
+F 0 "C2" H 2236 2304 50  0000 R CNN
+F 1 "0.1u" H 2236 2395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2388 2200 50  0001 C CNN
+F 3 "~" H 2350 2350 50  0001 C CNN
+	1    2350 2350
 	-1   0    0    1   
 $EndComp
-Text Label 2500 2600 0    50   ~ 0
+Text Label 2450 2600 0    50   ~ 0
 SEG_RTN
 Wire Wire Line
-	2300 2100 2400 2100
+	2250 2100 2350 2100
 $Comp
 L Device:R R6
 U 1 1 5DE3FE4C
-P 2150 2100
-F 0 "R6" V 2350 2100 50  0000 C CNN
-F 1 "5k" V 2250 2100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2080 2100 50  0001 C CNN
-F 3 "~" H 2150 2100 50  0001 C CNN
-	1    2150 2100
+P 2100 2100
+F 0 "R6" V 2300 2100 50  0000 C CNN
+F 1 "5k" V 2200 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2030 2100 50  0001 C CNN
+F 3 "~" H 2100 2100 50  0001 C CNN
+	1    2100 2100
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R5
 U 1 1 5DDF693A
-P 2150 2000
-F 0 "R5" V 1950 2000 50  0000 C CNN
-F 1 "5k" V 2050 2000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2080 2000 50  0001 C CNN
-F 3 "~" H 2150 2000 50  0001 C CNN
-	1    2150 2000
+P 2100 2000
+F 0 "R5" V 1900 2000 50  0000 C CNN
+F 1 "5k" V 2000 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2030 2000 50  0001 C CNN
+F 3 "~" H 2100 2000 50  0001 C CNN
+	1    2100 2000
 	0    1    1    0   
 $EndComp
-Text Label 2500 2000 0    50   ~ 0
+Text Label 2450 2000 0    50   ~ 0
 SEG_RTN
-Text Label 1950 1100 0    50   ~ 0
+Text Label 1900 1100 0    50   ~ 0
 VSEG+
-Text Label 1950 1200 0    50   ~ 0
+Text Label 1900 1200 0    50   ~ 0
 VSEG-
 Wire Wire Line
-	1850 1200 1950 1200
+	1800 1200 1900 1200
 Wire Wire Line
-	1850 1100 1950 1100
-Text Notes 800  2100 0    50   ~ 0
+	1800 1100 1900 1100
+Text Notes 750  2100 0    50   ~ 0
 Charge detection\n(shorted connector)
-Text Label 2500 2100 0    50   ~ 0
+Text Label 2450 2100 0    50   ~ 0
 CHRG_DET
 $Comp
 L Connector_Generic:Conn_01x02 J5
 U 1 1 5DA3D9DA
-P 1650 2000
-F 0 "J5" H 1650 2100 50  0000 C CNN
-F 1 "ChrgDetect" H 1568 2126 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1650 2000 50  0001 C CNN
-F 3 "~" H 1650 2000 50  0001 C CNN
-	1    1650 2000
+P 1600 2000
+F 0 "J5" H 1600 2100 50  0000 C CNN
+F 1 "ChrgDetect" H 1518 2126 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1600 2000 50  0001 C CNN
+F 3 "~" H 1600 2000 50  0001 C CNN
+	1    1600 2000
 	-1   0    0    -1  
 $EndComp
-Text Notes 1200 1650 0    50   ~ 0
+Text Notes 1150 1650 0    50   ~ 0
 Charge\npower in
-Text Notes 1200 1200 0    50   ~ 0
+Text Notes 1150 1200 0    50   ~ 0
 Segment\npower in
 Wire Wire Line
-	1850 1650 1950 1650
+	1800 1650 1900 1650
 Wire Wire Line
-	1850 1500 1950 1500
-Text Label 1950 1650 0    50   ~ 0
+	1800 1500 1900 1500
+Text Label 1900 1650 0    50   ~ 0
 CHRG-
-Text Label 1950 1500 0    50   ~ 0
+Text Label 1900 1500 0    50   ~ 0
 CHRG+
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5D8A8F21
-P 1650 1100
-F 0 "J1" H 1650 1200 50  0000 C CNN
-F 1 "SegPower" H 1568 1226 50  0001 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:DF22-2P-7.92" H 1650 1100 50  0001 C CNN
-F 3 "https://www.hirose.com/product/document?clcode=CL0680-1074-0-00&productname=DF22AL-2EP-7.92C&series=DF22&documenttype=Catalog&lang=en&documentid=D31682_en" H 1650 1100 50  0001 C CNN
-F 4 "H10718-ND" H 1650 1100 50  0001 C CNN "Digikey-Part"
-F 5 "Hirose Connector" H 1650 1100 50  0001 C CNN "Manufacturer"
-F 6 "DF22-2P-7.92DSA(05)" H 1650 1100 50  0001 C CNN "Manufacturer Part Number"
-F 7 "Mouser" H 1650 1100 50  0001 C CNN "Provider"
-F 8 "798-DF22-2P7.92DSA05" H 1650 1100 50  0001 C CNN "Provider Part Number"
-	1    1650 1100
+P 1600 1100
+F 0 "J1" H 1600 1200 50  0000 C CNN
+F 1 "SegPower" H 1518 1226 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:DF22-2P-7.92" H 1600 1100 50  0001 C CNN
+F 3 "https://www.hirose.com/product/document?clcode=CL0680-1074-0-00&productname=DF22AL-2EP-7.92C&series=DF22&documenttype=Catalog&lang=en&documentid=D31682_en" H 1600 1100 50  0001 C CNN
+F 4 "H10718-ND" H 1600 1100 50  0001 C CNN "Digikey-Part"
+F 5 "Hirose Connector" H 1600 1100 50  0001 C CNN "Manufacturer"
+F 6 "DF22-2P-7.92DSA(05)" H 1600 1100 50  0001 C CNN "Manufacturer Part Number"
+F 7 "Mouser" H 1600 1100 50  0001 C CNN "Provider"
+F 8 "798-DF22-2P7.92DSA05" H 1600 1100 50  0001 C CNN "Provider Part Number"
+	1    1600 1100
 	-1   0    0    -1  
 $EndComp
 Text Notes 700  800  0    79   ~ 16
@@ -816,7 +825,7 @@ Wire Notes Line
 Wire Notes Line
 	3200 2600 7250 2600
 Wire Notes Line
-	3800 2500 3100 2500
+	3650 2500 3100 2500
 Wire Notes Line
 	3100 2500 3100 4150
 Wire Notes Line
@@ -890,6 +899,8 @@ F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&
 F 4 "PB303-ND" H 6050 3050 50  0001 C CNN "Digikey-Part"
 F 5 "Digikey" H 6050 3050 50  0001 C CNN "Provider"
 F 6 "PB303-ND" H 6050 3050 50  0001 C CNN "Provider Part Number"
+F 7 "TE Connectivity" H 6050 3050 50  0001 C CNN "Manufacturer"
+F 8 "T9AS1D12-24" H 6050 3050 50  0001 C CNN "Manufacturer Part Number"
 	1    6050 3050
 	1    0    0    -1  
 $EndComp
@@ -976,16 +987,20 @@ L Device:LED D2
 U 1 1 5DDA986C
 P 2200 7400
 F 0 "D2" V 2147 7478 50  0000 L CNN
-F 1 "LED" V 2238 7478 50  0000 L CNN
+F 1 "LED2" V 2238 7478 50  0000 L CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2200 7400 50  0001 C CNN
 F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2007-0094/LTST-C193KGKT-5A.PDF" H 2200 7400 50  0001 C CNN
 F 4 "160-1828-1-ND" H 2200 7400 50  0001 C CNN "Digikey-Part"
+F 5 "Lite-On Inc." H 2200 7400 50  0001 C CNN "Manufacturer"
+F 6 "LTST-C193KGKT-5A" H 2200 7400 50  0001 C CNN "Manufacturer Part Number"
+F 7 "Digikey" H 2200 7400 50  0001 C CNN "Provider"
+F 8 "160-1828-1-ND" H 2200 7400 50  0001 C CNN "Provider Part Number"
 	1    2200 7400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8500 1400 9050 1400
-Text Label 9750 1400 0    50   ~ 0
+	8350 1400 8900 1400
+Text Label 9600 1300 0    50   ~ 0
 VSEG_FUSE_B
 NoConn ~ 7950 5500
 NoConn ~ 7950 5600
@@ -1114,7 +1129,7 @@ F 3 "~" H 950 6050 50  0001 C CNN
 $EndComp
 Text Label 4600 6950 0    50   ~ 0
 SEG_3V3
-Text Label 9150 1400 0    50   ~ 0
+Text Label 9000 1400 0    50   ~ 0
 SEG_5V
 Text Label 1900 3750 2    50   ~ 0
 MISC_FROM_PAC
@@ -1139,7 +1154,7 @@ Wire Wire Line
 Connection ~ 7700 5100
 Wire Wire Line
 	7700 5100 7700 5150
-Text Label 5300 1100 2    50   ~ 0
+Text Label 5150 1100 2    50   ~ 0
 SEG_5V
 $Comp
 L Lafayette_Electric_Car_Internals:ESP8266NodeMCUDevKit U4
@@ -1163,14 +1178,16 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADM6316
 F 4 "ADM6320CY29ARJZ-R7CT-ND" H 3800 6850 50  0001 C CNN "Digikey-Part"
 F 5 "Digikey" H 3800 6850 50  0001 C CNN "Provider"
 F 6 "ADM6320CY29ARJZ-R7CT-ND" H 3800 6850 50  0001 C CNN "Provider Part Number"
+F 7 "Analog Devices Inc." H 3800 6850 50  0001 C CNN "Manufacturer"
+F 8 "ADM6320CY29ARJZ-R7" H 3800 6850 50  0001 C CNN "Manufacturer Part Number"
 	1    3800 6850
 	1    0    0    -1  
 $EndComp
-Text Label 7300 2250 2    50   ~ 0
+Text Label 7150 2250 2    50   ~ 0
 SEG_RTN
 Wire Wire Line
-	7300 2250 7400 2250
-Connection ~ 7400 2250
+	7150 2250 7250 2250
+Connection ~ 7250 2250
 Wire Notes Line
 	6300 4250 10350 4250
 Wire Notes Line
@@ -1192,6 +1209,8 @@ F 3 "~" H 1300 3000 50  0001 C CNN
 F 4 "1276-3387-1-ND" H 1300 3000 50  0001 C CNN "Digikey-Part"
 F 5 "Digikey" H 1300 3000 50  0001 C CNN "Provider"
 F 6 "1276-3387-1-ND" H 1300 3000 50  0001 C CNN "Provider Part Number"
+F 7 "Samsung Electro-Mechanics" H 1300 3000 50  0001 C CNN "Manufacturer"
+F 8 "CL32B106KBJNNNE" H 1300 3000 50  0001 C CNN "Manufacturer Part Number"
 	1    1300 3000
 	-1   0    0    -1  
 $EndComp
@@ -1210,6 +1229,8 @@ F 3 "https://www.mouser.com/datasheet/2/308/BSS138W-1305267.pdf" H 5750 3750 50 
 F 4 "BSS138WCT-ND" H 5750 3750 50  0001 C CNN "Digikey-Part"
 F 5 "Digikey" H 5750 3750 50  0001 C CNN "Provider"
 F 6 "BSS138WCT-ND" H 5750 3750 50  0001 C CNN "Provider Part Number"
+F 7 "ON Semiconductor" H 5750 3750 50  0001 C CNN "Manufacturer"
+F 8 "BSS138W" H 5750 3750 50  0001 C CNN "Manufacturer Part Number"
 	1    5750 3750
 	1    0    0    -1  
 $EndComp
@@ -1224,42 +1245,46 @@ F 3 "https://www.mouser.com/datasheet/2/678/ACHS-712x-DS101_2018-02-28-1386725.p
 F 4 "516-4081-ND" H 8650 3450 50  0001 C CNN "Digikey-Part"
 F 5 "Digikey" H 8650 3450 50  0001 C CNN "Provider"
 F 6 "516-4081-ND" H 8650 3450 50  0001 C CNN "Provider Part Number"
+F 7 "Broadcom Limited" H 8650 3450 50  0001 C CNN "Manufacturer"
+F 8 "ACHS-7122-000E" H 8650 3450 50  0001 C CNN "Manufacturer Part Number"
 	1    8650 3450
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R R9
 U 1 1 5DA66857
-P 6300 1850
-F 0 "R9" H 6230 1804 50  0000 R CNN
-F 1 "10k" H 6230 1895 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6230 1850 50  0001 C CNN
-F 3 "~" H 6300 1850 50  0001 C CNN
-	1    6300 1850
+P 6150 1850
+F 0 "R9" H 6080 1804 50  0000 R CNN
+F 1 "10k" H 6080 1895 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 1850 50  0001 C CNN
+F 3 "~" H 6150 1850 50  0001 C CNN
+	1    6150 1850
 	-1   0    0    1   
 $EndComp
-Text Label 6300 1600 2    50   ~ 0
+Text Label 6150 1600 2    50   ~ 0
 SEG_5V
 Wire Wire Line
-	6300 1600 6300 1700
+	6150 1600 6150 1700
 Wire Wire Line
-	6300 2100 6300 2000
+	6150 2100 6150 2000
 Wire Wire Line
-	5700 2100 6300 2100
+	5550 2100 6150 2100
 Wire Wire Line
-	7400 2250 7400 1800
+	7250 2250 7250 1800
 $Comp
 L Device:C C5
 U 1 1 5DACA93E
-P 7400 1650
-F 0 "C5" H 7150 1700 50  0000 L CNN
-F 1 "10u" H 7150 1600 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 7438 1500 50  0001 C CNN
-F 3 "~" H 7400 1650 50  0001 C CNN
-F 4 "1276-3387-1-ND" H 7400 1650 50  0001 C CNN "Digikey-Part"
-F 5 "Digikey" H 7400 1650 50  0001 C CNN "Provider"
-F 6 "1276-3387-1-ND" H 7400 1650 50  0001 C CNN "Provider Part Number"
-	1    7400 1650
+P 7250 1650
+F 0 "C5" H 7000 1700 50  0000 L CNN
+F 1 "10u" H 7000 1600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 7288 1500 50  0001 C CNN
+F 3 "~" H 7250 1650 50  0001 C CNN
+F 4 "1276-3387-1-ND" H 7250 1650 50  0001 C CNN "Digikey-Part"
+F 5 "Digikey" H 7250 1650 50  0001 C CNN "Provider"
+F 6 "1276-3387-1-ND" H 7250 1650 50  0001 C CNN "Provider Part Number"
+F 7 "Samsung Electro-Mechanics" H 7250 1650 50  0001 C CNN "Manufacturer"
+F 8 "CL32B106KBJNNNE" H 7250 1650 50  0001 C CNN "Manufacturer Part Number"
+	1    7250 1650
 	1    0    0    -1  
 $EndComp
 Text Label 1800 6250 2    50   ~ 0
@@ -1271,9 +1296,9 @@ LED2
 Text Label 2100 7650 2    50   ~ 0
 SEG_RTN
 Wire Wire Line
-	2300 2000 2900 2000
+	2250 2000 2850 2000
 Wire Wire Line
-	2400 2100 2900 2100
+	2350 2100 2850 2100
 $Comp
 L Connector:TestPoint_2Pole TP6
 U 1 1 5DBE7750
@@ -1300,15 +1325,17 @@ Wire Wire Line
 $Comp
 L Device:C C7
 U 1 1 5DC38216
-P 8500 1650
-F 0 "C7" H 8615 1696 50  0000 L CNN
-F 1 "22u" H 8615 1605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 8538 1500 50  0001 C CNN
-F 3 "~" H 8500 1650 50  0001 C CNN
-F 4 "1276-3391-1-ND" H 8500 1650 50  0001 C CNN "Digikey-Part"
-F 5 "Digikey" H 8500 1650 50  0001 C CNN "Provider"
-F 6 "1276-3391-1-ND" H 8500 1650 50  0001 C CNN "Provider Part Number"
-	1    8500 1650
+P 8350 1650
+F 0 "C7" H 8465 1696 50  0000 L CNN
+F 1 "22u" H 8465 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 8388 1500 50  0001 C CNN
+F 3 "~" H 8350 1650 50  0001 C CNN
+F 4 "1276-3391-1-ND" H 8350 1650 50  0001 C CNN "Digikey-Part"
+F 5 "Digikey" H 8350 1650 50  0001 C CNN "Provider"
+F 6 "1276-3391-1-ND" H 8350 1650 50  0001 C CNN "Provider Part Number"
+F 7 "Samsung Electro-Mechanics" H 8350 1650 50  0001 C CNN "Manufacturer"
+F 8 "CL32B226KAJNFNE" H 8350 1650 50  0001 C CNN "Manufacturer Part Number"
+	1    8350 1650
 	1    0    0    -1  
 $EndComp
 NoConn ~ 9500 6100
@@ -1321,39 +1348,39 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x01 J2
 U 1 1 5DACCDC8
-P 1650 1500
-F 0 "J2" H 1650 1600 50  0000 C CNN
-F 1 "CHRG+" H 1568 1626 50  0001 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:DF22-1P-7.92" H 1650 1500 50  0001 C CNN
-F 3 "https://www.hirose.com/product/document?clcode=CL0680-1074-0-00&productname=DF22AL-2EP-7.92C&series=DF22&documenttype=Catalog&lang=en&documentid=D31682_en" H 1650 1500 50  0001 C CNN
-F 4 "Hirose Connector" H 1650 1500 50  0001 C CNN "Manufacturer"
-F 5 "DF22L-1P-7.92DSA(25)" H 1650 1500 50  0001 C CNN "Manufacturer Part Number"
-F 6 "Mouser" H 1650 1500 50  0001 C CNN "Provider"
-F 7 "798-DF22L1P7.92DSA25" H 1650 1500 50  0001 C CNN "Provider Part Number"
-	1    1650 1500
+P 1600 1500
+F 0 "J2" H 1600 1600 50  0000 C CNN
+F 1 "CHRG+" H 1518 1626 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:DF22-1P-7.92" H 1600 1500 50  0001 C CNN
+F 3 "https://www.hirose.com/product/document?clcode=CL0680-1074-0-00&productname=DF22AL-2EP-7.92C&series=DF22&documenttype=Catalog&lang=en&documentid=D31682_en" H 1600 1500 50  0001 C CNN
+F 4 "Hirose Connector" H 1600 1500 50  0001 C CNN "Manufacturer"
+F 5 "DF22L-1P-7.92DSA(25)" H 1600 1500 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Mouser" H 1600 1500 50  0001 C CNN "Provider"
+F 7 "798-DF22L1P7.92DSA25" H 1600 1500 50  0001 C CNN "Provider Part Number"
+	1    1600 1500
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J3
 U 1 1 5DADB972
-P 1650 1650
-F 0 "J3" H 1650 1550 50  0000 C CNN
-F 1 "CHRG-" H 1568 1776 50  0001 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:DF22-1P-7.92" H 1650 1650 50  0001 C CNN
-F 3 "https://www.hirose.com/product/document?clcode=CL0680-1074-0-00&productname=DF22AL-2EP-7.92C&series=DF22&documenttype=Catalog&lang=en&documentid=D31682_en" H 1650 1650 50  0001 C CNN
-F 4 "Hirose Connector" H 1650 1650 50  0001 C CNN "Manufacturer"
-F 5 "DF22R-1P-7.92DSA(05)" H 1650 1650 50  0001 C CNN "Manufacturer Part Number"
-F 6 "Mouser" H 1650 1650 50  0001 C CNN "Provider"
-F 7 "798-DF22R1P7.92DSA05" H 1650 1650 50  0001 C CNN "Provider Part Number"
-	1    1650 1650
+P 1600 1650
+F 0 "J3" H 1600 1550 50  0000 C CNN
+F 1 "CHRG-" H 1518 1776 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:DF22-1P-7.92" H 1600 1650 50  0001 C CNN
+F 3 "https://www.hirose.com/product/document?clcode=CL0680-1074-0-00&productname=DF22AL-2EP-7.92C&series=DF22&documenttype=Catalog&lang=en&documentid=D31682_en" H 1600 1650 50  0001 C CNN
+F 4 "Hirose Connector" H 1600 1650 50  0001 C CNN "Manufacturer"
+F 5 "DF22R-1P-7.92DSA(05)" H 1600 1650 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Mouser" H 1600 1650 50  0001 C CNN "Provider"
+F 7 "798-DF22R1P7.92DSA05" H 1600 1650 50  0001 C CNN "Provider Part Number"
+	1    1600 1650
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	3600 7750 3500 7750
 Wire Wire Line
-	1850 2100 2000 2100
+	1800 2100 1950 2100
 Wire Wire Line
-	1850 2000 2000 2000
+	1800 2000 1950 2000
 $Comp
 L Device:C C10
 U 1 1 5DAF0EF1
@@ -1387,4 +1414,26 @@ Wire Wire Line
 	5750 3400 5950 3400
 Wire Wire Line
 	5750 3100 5950 3100
+$Comp
+L Lafayette_Electric_Car_Internals:X0202 D4
+U 1 1 5DB9BF33
+P 9600 1700
+F 0 "D4" H 9700 1700 50  0000 L CNN
+F 1 "X0202MN 5BA4" H 9700 1600 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" V 9600 1700 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/2d/c1/ab/c5/67/cd/4b/d4/CD00002274.pdf/files/CD00002274.pdf/jcr:content/translations/en.CD00002274.pdf" V 9600 1700 50  0001 C CNN
+F 4 "STMicroelectronics" H 9600 1700 50  0001 C CNN "Manufacturer"
+F 5 "X0202MN 5BA4" H 9600 1700 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Digikey" H 9600 1700 50  0001 C CNN "Provider"
+F 7 "497-2532-1-ND" H 9600 1700 50  0001 C CNN "Provider Part Number"
+	1    9600 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1500 9700 1400
+Wire Wire Line
+	9700 1400 9600 1400
+Connection ~ 9600 1400
+Wire Wire Line
+	9600 1400 9600 1500
 $EndSCHEMATC
